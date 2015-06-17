@@ -2,6 +2,13 @@
 
 An alfred workflow for accessing codebox snippets.
 
+## Important!
+
+The workflow works fairly well, but there are a few caveats. You should not do the following with your codebox libraries:
+
+* Don't put spaces into tag, list, or folder names. Use an underscore instead.
+* Don't nest folders/lists with the same name. 
+
 ## Usage
 
 __Set the codebox source using `cb_src`__
