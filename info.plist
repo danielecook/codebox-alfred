@@ -45,6 +45,14 @@
 				<key>modifiersubtext</key>
 				<string></string>
 			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>EE8E5A2E-9AB1-443B-8A89-A23688389B7A</string>
+				<key>modifiers</key>
+				<integer>262144</integer>
+				<key>modifiersubtext</key>
+				<string>Show large type of snippet</string>
+			</dict>
 		</array>
 	</dict>
 	<key>createdby</key>
@@ -108,31 +116,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>output</key>
-				<integer>0</integer>
-				<key>removeextension</key>
-				<false/>
-				<key>sticky</key>
-				<false/>
-				<key>text</key>
-				<string>{query}</string>
-				<key>title</key>
-				<string>Copied</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>C9524867-33F5-4787-865B-81C66BD28334</string>
-			<key>version</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>escaping</key>
@@ -166,6 +149,31 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>output</key>
+				<integer>0</integer>
+				<key>removeextension</key>
+				<false/>
+				<key>sticky</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>Copied</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>C9524867-33F5-4787-865B-81C66BD28334</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -179,6 +187,14 @@
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
 			<string>008EA8C2-084F-49A7-8265-C644BEA65A52</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>type</key>
+			<string>alfred.workflow.output.largetype</string>
+			<key>uid</key>
+			<string>EE8E5A2E-9AB1-443B-8A89-A23688389B7A</string>
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
@@ -235,12 +251,17 @@
 		<key>B8DA1781-705E-4A4D-B435-66AC0AF445AE</key>
 		<dict>
 			<key>ypos</key>
-			<real>250</real>
+			<real>510</real>
 		</dict>
 		<key>C9524867-33F5-4787-865B-81C66BD28334</key>
 		<dict>
 			<key>ypos</key>
 			<real>130</real>
+		</dict>
+		<key>EE8E5A2E-9AB1-443B-8A89-A23688389B7A</key>
+		<dict>
+			<key>ypos</key>
+			<real>260</real>
 		</dict>
 	</dict>
 	<key>webaddress</key>

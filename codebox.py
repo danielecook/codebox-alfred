@@ -59,7 +59,8 @@ def main(wf):
 
     elif arg.startswith("#"):
         results = snp.list_tags()
-        if arg != "#" and search.strip() != "":
+        search = arg[1:]
+        if len(search) > 0:
             results = wf.filter(search, results, key= lambda x: x["name"])
         for i in results:
             tag_name = i["name"]
@@ -115,11 +116,9 @@ def main(wf):
 
     else:
         # Search
-
-        results = wf.filter(arg, snps, key= lambda x: x["title"] + ' '.join(x["tags"]) + " " + x["content"])
+        results = wf.filter(arg, snps, key= lambda x: x["title"] + ' '.join(x["tags"]) + ' '.join(x["lists"]) + " " + x["content"])
         for snp in results:
             wf.add_item(snp["title"] , snp["content"].strip(), arg = snp["content"], valid=True, icon="snippet.png")
-    
     if len(results) == 0:
         wf.add_item("No Results Found", valid=True, icon="error.png")
 
