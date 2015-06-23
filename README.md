@@ -2,6 +2,8 @@
 
 An alfred workflow for accessing codebox snippets.
 
+## [Download the latest version](https://github.com/danielecook/codebox-alfred/releases)
+
 ## Important!
 
 The workflow works fairly well, but there are a few caveats. You should not do the following with your codebox libraries:
