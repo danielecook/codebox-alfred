@@ -2,7 +2,7 @@
 
 An alfred workflow for accessing codebox snippets.
 
-## [Download the latest version](https://github.com/danielecook/codebox-alfred/releases)
+### [Download the latest version](https://github.com/danielecook/codebox-alfred/releases)
 
 ## Important!
 
