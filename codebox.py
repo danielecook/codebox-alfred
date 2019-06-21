@@ -8,7 +8,7 @@ import re
 from collections import Counter
 import difflib
 
-__version__ = '0.1'
+__version__ = '0.2'
 
 def main(wf):
     arg = ' '.join(wf.args)
@@ -116,9 +116,11 @@ def main(wf):
 
     else:
         # Search
-        results = wf.filter(arg, snps, key= lambda x: x["title"] + ' '.join(x["tags"]) + ' '.join(x["lists"]) + " " + x["content"])
+        for x in snps:
+            log.info(x["content"])
+        results = wf.filter(arg, snps, key= lambda x: x["title"].decode("utf8") + ' '.join(x["tags"]) + ' '.join(x["lists"]) + " " + x["content"].decode("utf8"))
         for snp in results:
-            wf.add_item(snp["title"] , snp["content"].strip(), arg = snp["content"], valid=True, icon="snippet.png")
+            wf.add_item(snp["title"] , snp["content"].strip().decode("utf8"), arg = snp["content"].decode("utf8"), valid=True, icon="snippet.png")
     if len(results) == 0:
         wf.add_item("No Results Found", valid=True, icon="error.png")
 
