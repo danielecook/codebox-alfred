@@ -1,5 +1,4 @@
-#!/usr/bin/python
-# encoding: utf-8
+#!/usr/bin/env python
 
 import sys
 import os
@@ -10,8 +9,8 @@ def main(wf):
     wf.add_item("To ensure your file is found, make sure it ends in '.cbxml'", icon="info.png")
     out, err = Popen(["mdfind","-name",".cbxml"], stdout=PIPE, stderr=PIPE).communicate()
     out = out.split("\n")
-    log.debug(out)
     for i in out:
+        i = i.decode("utf-8")
         wf.add_item(os.path.split(i)[1],i, arg=i, valid=True)
 
     wf.send_feedback()

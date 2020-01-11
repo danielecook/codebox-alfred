@@ -8,7 +8,7 @@ import re
 from collections import Counter
 import difflib
 
-__version__ = '0.2'
+__version__ = '0.3'
 
 def main(wf):
     arg = ' '.join(wf.args)
