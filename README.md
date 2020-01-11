@@ -17,6 +17,10 @@ __Set the codebox source using `cb_src`__
 
 ![set source](img/set_src.png)
 
+Be sure that your code box library shows the extension in finder or it will not be discoverable.
+
+![cbsrc](img/hidden.png)
+
 __Invoke the workflow by typing `ff`__
 
 ![search directory](img/browse_directory.png)
